@@ -3,16 +3,6 @@ import sys
 import qrcode
 from PIL import Image
 
-'''
-SOURCES: 
-https://pyauth.github.io/pyotp/#:~:text=secret-,Google%20Authenticator%20Compatible
-https://pypi.org/project/qrcode/  
-    ^ specifically: 'Advanced Usage: QRCode class' & 'Pure Python PNG'
-https://tools.ietf.org/html/rfc6238
-https://pillow.readthedocs.io/en/stable/
-'''
-
-
 userEmail = 'example@google.com'
 issuerName = 'Secure App'
 secret_hc = 'CFBXIOH2AHXUXVZI35MUTYQHM4IGJ65X'      # hard-coded secret (one instance/return value from gen_secret())
